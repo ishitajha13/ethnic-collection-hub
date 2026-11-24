@@ -1,0 +1,808 @@
+/* ==========================================================================
+   BLUECORE — Employer & Staff Management System
+   Login Page Stylesheet
+
+   Theme: Navy #062945 · Ivory #FAF7F3 · Gold #D6A12B
+   Fonts: Playfair Display (headings) · Inter (body/form)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── CSS Custom Properties ────────────────────────────────────────────────── */
+:root {
+  --bc-navy:          #062945;
+  --bc-navy-dark:     #031728;
+  --bc-navy-mid:      #0b3d64;
+  --bc-navy-hover:    #083457;
+  --bc-navy-glass:    rgba(6, 41, 69, 0.08);
+
+  --bc-gold:          #D6A12B;
+  --bc-gold-light:    #F4DE9F;
+  --bc-gold-dark:     #A57816;
+  --bc-gold-soft:     #FBF4E2;
+  --bc-gold-border:   rgba(214, 161, 43, 0.35);
+  --bc-gold-glow:     rgba(214, 161, 43, 0.18);
+
+  --bc-ivory:         #FAF7F3;
+  --bc-white:         #FFFFFF;
+  --bc-card-bg:       #FFFFFF;
+  --bc-card-border:   #E8E2D9;
+
+  --bc-text-primary:  #1A2734;
+  --bc-text-secondary:#5F6B7A;
+  --bc-text-muted:    #8E99A8;
+  --bc-text-placeholder: #A8B3BD;
+
+  --bc-error:         #C62828;
+  --bc-error-bg:      #FDF2F2;
+  --bc-error-border:  #F5C6C6;
+
+  --bc-success:       #1B5E20;
+  --bc-success-bg:    #F0FDF4;
+  --bc-success-border:#A7F3D0;
+
+  --bc-info-bg:       #EFF6FF;
+  --bc-info-border:   #BFDBFE;
+  --bc-info-text:     #1E40AF;
+
+  --bc-radius-sm:     6px;
+  --bc-radius-md:     10px;
+  --bc-radius-lg:     14px;
+  --bc-radius-xl:     20px;
+  --bc-radius-full:   9999px;
+
+  --bc-shadow-sm:     0 2px 10px rgba(6, 41, 69, 0.06);
+  --bc-shadow-md:     0 6px 24px rgba(6, 41, 69, 0.09);
+  --bc-shadow-lg:     0 12px 40px rgba(6, 41, 69, 0.14);
+  --bc-shadow-btn:    0 4px 16px rgba(6, 41, 69, 0.3);
+  --bc-shadow-gold:   0 4px 18px rgba(214, 161, 43, 0.28);
+
+  --bc-transition:    0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  --bc-transition-fast: 0.15s ease;
+
+  --font-heading:     'Playfair Display', 'Georgia', serif;
+  --font-body:        'Inter', 'system-ui', -apple-system, sans-serif;
+}
+
+/* ── Page Root ────────────────────────────────────────────────────────────── */
+.bc-login-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bc-ivory);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Split Layout (Left Brand 42% / Right Form 58%) ──────────────────────── */
+.bc-login-layout {
+  display: grid;
+  grid-template-columns: 42fr 58fr;
+  flex: 1 0 auto;
+  min-height: 100vh;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   LEFT PANEL — Brand Presentation
+   ═══════════════════════════════════════════════════════════════════════════ */
+.bc-brand-panel {
+  position: relative;
+  background: radial-gradient(circle at 50% 20%, #0D4175 0%, #062945 55%, #021525 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 56px 44px;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Geometric gold corner accents */
+.bc-corner {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+.bc-corner-tl { top: 0; left: 0; width: 280px; height: 280px; }
+.bc-corner-br { bottom: 0; right: 0; width: 280px; height: 280px; }
+
+/* Subtle radial shimmer */
+.bc-brand-shimmer {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 70%, rgba(214,161,43,0.06) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bc-brand-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  gap: 0;
+}
+
+/* ── Bluecore Logo Mark ────────────────────────────────────────────────────── */
+.bc-logo-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.bc-logo-emblem {
+  width: 86px;
+  height: 86px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #0D4175 0%, #062945 100%);
+  border: 2px solid rgba(214, 161, 43, 0.5);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 0 1px rgba(214,161,43,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bc-emblem-svg {
+  width: 50px;
+  height: 50px;
+}
+
+.bc-logo-wordmark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.bc-wordmark-primary {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  line-height: 1;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+.bc-wordmark-primary span {
+  color: var(--bc-gold);
+}
+
+.bc-wordmark-tagline {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+
+/* ── Gold Divider Ornament ────────────────────────────────────────────────── */
+.bc-gold-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 260px;
+  margin: 28px 0;
+  color: var(--bc-gold);
+  opacity: 0.75;
+}
+.bc-divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--bc-gold), transparent);
+}
+.bc-divider-gem {
+  font-size: 0.75rem;
+  color: var(--bc-gold);
+  flex-shrink: 0;
+}
+
+/* ── Brand Tagline ────────────────────────────────────────────────────────── */
+.bc-brand-tagline {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.35);
+  margin-bottom: 4px;
+}
+.bc-tagline-accent {
+  color: var(--bc-gold-light);
+  font-weight: 500;
+  display: block;
+  margin-top: 4px;
+}
+
+/* ── Trust Pillars ────────────────────────────────────────────────────────── */
+.bc-trust-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(214,161,43,0.18);
+  border-radius: var(--bc-radius-md);
+  backdrop-filter: blur(4px);
+  margin-top: 10px;
+}
+.bc-trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.bc-trust-num {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--bc-gold);
+  line-height: 1;
+}
+.bc-trust-label {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.bc-trust-sep {
+  color: rgba(214,161,43,0.3);
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   RIGHT PANEL — Login Form
+   ═══════════════════════════════════════════════════════════════════════════ */
+.bc-form-panel {
+  background-color: var(--bc-ivory);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 44px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.bc-form-inner {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* ── Top Nav Row ──────────────────────────────────────────────────────────── */
+.bc-form-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.bc-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--bc-text-secondary);
+  font-size: 0.83rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--bc-transition-fast);
+}
+.bc-back-link:hover { color: var(--bc-navy); }
+
+.bc-portal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bc-navy);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: var(--bc-radius-full);
+  box-shadow: var(--bc-shadow-sm);
+}
+.bc-portal-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--bc-gold);
+  flex-shrink: 0;
+  animation: bc-pulse 2s ease-in-out infinite;
+}
+@keyframes bc-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(0.8); }
+}
+
+/* ── Form Header ──────────────────────────────────────────────────────────── */
+.bc-form-header {
+  margin-bottom: 28px;
+}
+
+.bc-form-heading {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--bc-navy);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin-bottom: 8px;
+}
+
+.bc-form-subtitle {
+  font-size: 0.95rem;
+  color: var(--bc-text-secondary);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* ── Alert Banners ────────────────────────────────────────────────────────── */
+.bc-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: var(--bc-radius-md);
+  margin-bottom: 22px;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  animation: bc-fade-in 0.25s ease;
+}
+.bc-alert-icon { flex-shrink: 0; margin-top: 1px; }
+
+.bc-alert-error {
+  background: var(--bc-error-bg);
+  border: 1px solid var(--bc-error-border);
+  color: var(--bc-error);
+}
+.bc-alert-success {
+  background: var(--bc-success-bg);
+  border: 1px solid var(--bc-success-border);
+  color: var(--bc-success);
+}
+.bc-alert-info {
+  background: var(--bc-info-bg);
+  border: 1px solid var(--bc-info-border);
+  color: var(--bc-info-text);
+}
+
+@keyframes bc-fade-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Form ─────────────────────────────────────────────────────────────────── */
+.bc-auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Field Group ──────────────────────────────────────────────────────────── */
+.bc-field-group {
+  margin-bottom: 20px;
+}
+
+.bc-field-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--bc-navy);
+  margin-bottom: 7px;
+  font-family: var(--font-body);
+}
+.bc-required-star { color: var(--bc-error); font-size: 0.9rem; }
+
+.bc-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bc-input-icon {
+  position: absolute;
+  left: 14px;
+  color: var(--bc-text-muted);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  transition: color var(--bc-transition-fast);
+  z-index: 1;
+}
+
+.bc-input {
+  width: 100%;
+  height: 50px;
+  padding: 10px 14px 10px 44px;
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  color: var(--bc-text-primary);
+  background: var(--bc-white);
+  border: 1.5px solid var(--bc-card-border);
+  border-radius: var(--bc-radius-md);
+  outline: none;
+  transition: all var(--bc-transition);
+}
+.bc-input::placeholder { color: var(--bc-text-placeholder); font-size: 0.9rem; }
+.bc-input:focus {
+  border-color: var(--bc-navy);
+  box-shadow: 0 0 0 3px rgba(6, 41, 69, 0.08);
+}
+.bc-input-wrap:focus-within .bc-input-icon { color: var(--bc-navy); }
+
+.bc-input.bc-input-error { border-color: var(--bc-error); }
+
+/* Password toggle button */
+.bc-pw-toggle {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--bc-text-muted);
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: color var(--bc-transition-fast);
+  z-index: 1;
+}
+.bc-pw-toggle:hover { color: var(--bc-navy); }
+.bc-pw-toggle:focus-visible { outline: 2px solid var(--bc-navy); outline-offset: 2px; }
+
+/* Field error message */
+.bc-field-error {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--bc-error);
+  font-size: 0.78rem;
+  margin-top: 5px;
+  font-family: var(--font-body);
+}
+
+/* ── Aux Row (Remember + Forgot) ──────────────────────────────────────────── */
+.bc-aux-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.bc-remember-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--bc-text-secondary);
+  font-size: 0.85rem;
+  user-select: none;
+}
+.bc-remember-check {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--bc-navy);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.bc-forgot-btn {
+  background: none;
+  border: none;
+  color: var(--bc-navy);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  transition: color var(--bc-transition-fast);
+  font-family: var(--font-body);
+  text-decoration: none;
+}
+.bc-forgot-btn:hover {
+  color: var(--bc-gold-dark);
+  text-decoration: underline;
+}
+
+/* ── Sign In Button ───────────────────────────────────────────────────────── */
+.bc-signin-btn {
+  width: 100%;
+  height: 52px;
+  background: linear-gradient(135deg, var(--bc-navy) 0%, var(--bc-navy-mid) 100%);
+  color: #fff;
+  border: none;
+  border-radius: var(--bc-radius-md);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all var(--bc-transition);
+  box-shadow: var(--bc-shadow-btn);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.bc-signin-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(214,161,43,0.12) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity var(--bc-transition);
+}
+.bc-signin-btn:hover:not(:disabled)::after { opacity: 1; }
+.bc-signin-btn:hover:not(:disabled) {
+  box-shadow: 0 6px 24px rgba(6, 41, 69, 0.42);
+  transform: translateY(-1px);
+}
+.bc-signin-btn:active:not(:disabled) { transform: translateY(0); }
+.bc-signin-btn:disabled { opacity: 0.72; cursor: not-allowed; }
+
+.bc-btn-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Spinner */
+.bc-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: bc-spin 0.65s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes bc-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Gold accent bottom border on hover */
+.bc-signin-btn-gold-accent {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--bc-gold);
+  transition: width 0.3s ease;
+  border-radius: 1px;
+}
+.bc-signin-btn:hover:not(:disabled) .bc-signin-btn-gold-accent { width: 60%; }
+
+/* ── Demo Credentials Strip ───────────────────────────────────────────────── */
+.bc-demo-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 14px;
+  background: var(--bc-gold-soft);
+  border: 1px solid var(--bc-gold-border);
+  border-radius: var(--bc-radius-md);
+  margin-bottom: 24px;
+}
+
+.bc-demo-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--bc-gold-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+}
+
+.bc-demo-pill {
+  background: none;
+  border: 1px solid var(--bc-gold-border);
+  color: var(--bc-gold-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--bc-radius-full);
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all var(--bc-transition-fast);
+}
+.bc-demo-pill:hover,
+.bc-demo-pill.active {
+  background: var(--bc-navy);
+  border-color: var(--bc-navy);
+  color: #fff;
+}
+
+/* ── Divider ──────────────────────────────────────────────────────────────── */
+.bc-form-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.bc-divider-hr {
+  flex: 1;
+  height: 1px;
+  background: var(--bc-card-border);
+}
+.bc-divider-text {
+  font-size: 0.78rem;
+  color: var(--bc-text-muted);
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+/* ── Footer Note ──────────────────────────────────────────────────────────── */
+.bc-form-footer-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--bc-text-muted);
+  line-height: 1.6;
+  margin-top: 4px;
+}
+.bc-footer-link {
+  color: var(--bc-navy);
+  font-weight: 600;
+  text-decoration: none;
+}
+.bc-footer-link:hover { text-decoration: underline; }
+
+/* ── Forgot Password Modal ────────────────────────────────────────────────── */
+.bc-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 23, 40, 0.65);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 20px;
+  animation: bc-fade-in 0.2s ease;
+}
+
+.bc-modal-card {
+  background: var(--bc-white);
+  border-radius: var(--bc-radius-xl);
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 60px rgba(6,41,69,0.25), 0 0 0 1px rgba(214,161,43,0.12);
+  position: relative;
+  animation: bc-slide-up 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes bc-slide-up {
+  from { opacity: 0; transform: translateY(20px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.bc-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--bc-text-muted);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  transition: color var(--bc-transition-fast);
+}
+.bc-modal-close:hover { color: var(--bc-navy); }
+
+.bc-modal-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--bc-gold-soft);
+  border: 1px solid var(--bc-gold-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bc-gold);
+  margin-bottom: 20px;
+}
+
+.bc-modal-heading {
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--bc-navy);
+  margin-bottom: 8px;
+}
+
+.bc-modal-subtext {
+  font-size: 0.88rem;
+  color: var(--bc-text-secondary);
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+.bc-modal-submit-btn {
+  width: 100%;
+  height: 46px;
+  background: var(--bc-navy);
+  color: #fff;
+  border: none;
+  border-radius: var(--bc-radius-md);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--bc-transition);
+  box-shadow: var(--bc-shadow-btn);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.bc-modal-submit-btn:hover:not(:disabled) {
+  background: var(--bc-navy-hover);
+  transform: translateY(-1px);
+}
+.bc-modal-submit-btn:disabled { opacity: 0.7; cursor: not-allowed; }
+
+/* ── Page Footer Bar ──────────────────────────────────────────────────────── */
+.bc-login-footer {
+  background: var(--bc-navy-dark);
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 0.75rem;
+  font-family: var(--font-body);
+  letter-spacing: 0.03em;
+}
+.bc-login-footer a {
+  color: rgba(214,161,43,0.7);
+  text-decoration: none;
+}
+.bc-login-footer a:hover { color: var(--bc-gold); }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .bc-login-layout {
+    grid-template-columns: 1fr;
+  }
+  .bc-brand-panel {
+    padding: 40px 28px 36px;
+    min-height: auto;
+  }
+  .bc-corner-tl,
+  .bc-corner-br { width: 180px; height: 180px; }
+
+  .bc-wordmark-primary { font-size: 2rem; }
+  .bc-brand-tagline { font-size: 1.1rem; }
+}
+
+@media (max-width: 540px) {
+  .bc-form-panel { padding: 32px 20px; }
+  .bc-form-heading { font-size: 1.9rem; }
+  .bc-form-topbar { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .bc-modal-card { padding: 28px 20px; }
+}

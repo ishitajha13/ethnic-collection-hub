@@ -4398,6 +4398,2928 @@ textarea.input-field-control {
   }
 }
 
+/* =========================================
+   ETHNIC COLLECTION HUB
+   WHOLESALE BULK PRICING MATRIX
+========================================= */
+
+/* Wholesale policy banner */
+.wholesale-rule-banner {
+  background: #06243d;
+  color: #ffffff;
+  padding: 24px 28px;
+  border: 1px solid #d4af37;
+  border-radius: 14px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 14px rgba(6, 36, 61, 0.08);
+}
+
+.wholesale-rule-banner h4 {
+  color: #d4af37;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.wholesale-rule-banner p {
+  color: #e7edf3;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Bulk volume calculator */
+.slab-calculator-card {
+  background: #ffffff;
+  border: 1px solid #e7e0d6;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 16px rgba(6, 36, 61, 0.05);
+}
+
+.calc-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.calc-header h3 {
+  color: #06243d;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Volume selection */
+.calc-input-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.calc-input-row label {
+  color: #06243d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.calc-chip-btn {
+  background: #ffffff;
+  color: #06243d;
+  border: 1px solid #d9dfe5;
+  border-radius: 8px;
+  padding: 9px 15px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.calc-chip-btn:hover {
+  border-color: #d4af37;
+  background: #fbf7eb;
+}
+
+.calc-chip-btn.active {
+  background: #06243d;
+  color: #ffffff;
+  border-color: #06243d;
+  box-shadow: 0 3px 8px rgba(6, 36, 61, 0.15);
+}
+
+.calc-chip-btn:focus-visible {
+  outline: 3px solid rgba(212, 175, 55, 0.4);
+  outline-offset: 2px;
+}
+
+.text-muted {
+  color: #718096;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-base {
+  font-size: 16px;
+}
+
+.text-lg {
+  font-size: 18px;
+}
+
+.text-navy {
+  color: #06243d;
+}
+
+.text-gold {
+  color: #d4af37;
+}
+
+.text-green {
+  color: #16865c;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Calculator results */
+.calc-results-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  background: #f8f5ef;
+  border: 1px solid #e7e0d6;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.calc-results-strip > div {
+  flex: 1;
+}
+
+.calc-results-strip strong {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+/* Pricing matrix card */
+.pricing-matrix-table-card {
+  background: #ffffff;
+  border: 1px solid #e7e0d6;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 16px rgba(6, 36, 61, 0.04);
+}
+
+.pricing-matrix-table-card h3 {
+  color: #06243d;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+/* Table wrapper */
+.pricing-matrix-table-card .dashboard-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e7e0d6;
+  border-radius: 10px;
+}
+
+/* Pricing table */
+.pricing-matrix-table-card .dashboard-table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+}
+
+.pricing-matrix-table-card .dashboard-table th {
+  background: #f8f5ef;
+  color: #06243d;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
+  padding: 16px;
+  border-bottom: 1px solid #e2d8c9;
+  white-space: nowrap;
+}
+
+.pricing-matrix-table-card .dashboard-table td {
+  color: #243447;
+  font-size: 14px;
+  padding: 18px 16px;
+  border-bottom: 1px solid #eee8df;
+  vertical-align: middle;
+}
+
+.pricing-matrix-table-card .dashboard-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-matrix-table-card .dashboard-table tbody tr:hover {
+  background: #fcfaf6;
+}
+
+.pricing-matrix-table-card .dashboard-table td strong {
+  color: #06243d;
+  font-weight: 700;
+}
+
+.pricing-matrix-table-card .dashboard-table td .text-green {
+  color: #16865c;
+}
+
+.pricing-matrix-table-card .dashboard-table td .text-gold {
+  color: #c28a12;
+}
+
+/* Utility classes used in this page */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-3 {
+  gap: 12px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mb-8 {
+  margin-bottom: 32px;
+}
+
+.block {
+  display: block;
+}
+
+.rounded {
+  border-radius: 6px;
+}
+
+.bg-warm-ivory {
+  background: #f8f5ef;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .calc-results-strip {
+    flex-wrap: wrap;
+  }
+
+  .calc-results-strip > div {
+    flex: 1 1 200px;
+  }
+
+  .calc-input-row {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .wholesale-rule-banner {
+    padding: 18px;
+  }
+
+  .wholesale-rule-banner h4 {
+    font-size: 17px;
+  }
+
+  .wholesale-rule-banner p {
+    font-size: 13px;
+  }
+
+  .slab-calculator-card,
+  .pricing-matrix-table-card {
+    padding: 16px;
+  }
+
+  .calc-header h3,
+  .pricing-matrix-table-card h3 {
+    font-size: 17px;
+  }
+
+  .calc-input-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .calc-input-row > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .calc-chip-btn {
+    padding: 8px 11px;
+    font-size: 12px;
+  }
+
+  .calc-results-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .calc-results-strip > div {
+    width: 100%;
+  }
+}
+
+/* ==========================================
+   ETHNIC COLLECTION HUB
+   AADHAAR SCAN PAGE STYLING
+========================================== */
+
+.aadhaar-hero-section {
+  padding: 55px 20px 35px;
+  background: #f8f5ef;
+  text-align: center;
+}
+
+.aadhaar-hero-section .page-hero-title {
+  color: #06243d;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  margin: 20px 0 12px;
+}
+
+.aadhaar-hero-section .page-hero-subtitle {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.aadhaar-workflow-section {
+  padding: 35px 20px 60px;
+  background: #f8f5ef;
+}
+
+.aadhaar-workflow-section .site-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main workflow card */
+.aadhaar-workflow-card {
+  background: #ffffff;
+  border: 1px solid #e7e0d6;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 8px 30px rgba(6, 36, 61, 0.06);
+  overflow: hidden;
+}
+
+/* Step indicator */
+.workflow-stepper-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #eee8df;
+}
+
+.step-node {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.node-num {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf0f3;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.step-node.active .node-num {
+  background: #06243d;
+  color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(6, 36, 61, 0.1);
+}
+
+.step-node.completed .node-num {
+  background: #d4af37;
+  color: #06243d;
+}
+
+.step-node.active .node-label,
+.step-node.completed .node-label {
+  color: #06243d;
+  font-weight: 600;
+}
+
+.node-label {
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.node-line {
+  flex: 1;
+  height: 2px;
+  min-width: 15px;
+  background: #e2e8f0;
+}
+
+/* Privacy banner */
+.privacy-guarantee-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px;
+  margin-bottom: 28px;
+  background: #06243d;
+  color: #ffffff;
+  border: 1px solid #d4af37;
+  border-radius: 14px;
+}
+
+.banner-icon-col {
+  flex-shrink: 0;
+  color: #d4af37;
+}
+
+.banner-text-col h3 {
+  color: #d4af37;
+  font-size: 21px;
+  margin: 0 0 10px;
+}
+
+.banner-text-col p {
+  color: #e7edf3;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Landing page choices */
+.workflow-options-dual {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.option-choice-box {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e7e0d6;
+  border-radius: 14px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.option-choice-box:hover {
+  box-shadow: 0 8px 22px rgba(6, 36, 61, 0.07);
+  transform: translateY(-2px);
+}
+
+.option-choice-box.primary-choice {
+  background: #fcfaf6;
+  border-color: #d4af37;
+}
+
+.choice-icon-wrap {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  background: #f8f5ef;
+  color: #06243d;
+  border-radius: 12px;
+}
+
+.option-choice-box h4 {
+  color: #06243d;
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+.option-choice-box p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Capture options */
+.capture-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.capture-card {
+  padding: 30px;
+  border: 1px solid #e7e0d6;
+  border-radius: 14px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.capture-icon-circle {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f5ef;
+  color: #06243d;
+  border-radius: 50%;
+}
+
+.capture-card h3 {
+  color: #06243d;
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.capture-card p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Buttons */
+.aadhaar-workflow-section .block-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.aadhaar-workflow-section .btn-primary-navy {
+  background: #06243d;
+  color: #ffffff;
+  border: 1px solid #06243d;
+}
+
+.aadhaar-workflow-section .btn-primary-navy:hover {
+  background: #103a5c;
+}
+
+.aadhaar-workflow-section .btn-gold-action {
+  background: #d4af37;
+  color: #06243d;
+  border: 1px solid #d4af37;
+}
+
+.aadhaar-workflow-section .btn-gold-action:hover {
+  background: #e2bd4d;
+}
+
+.aadhaar-workflow-section button {
+  font-family: inherit;
+}
+
+/* Hide the actual file input */
+.aadhaar-workflow-section .hidden-file-input {
+  display: none;
+}
+
+/* Processing screen */
+.aadhaar-processing-screen {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.processing-spinner-box {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.processing-spinner-box h3 {
+  color: #06243d;
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.processing-spinner-box p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.radar-scan-anim {
+  width: 180px;
+  height: 110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f5ef;
+  border: 1px solid #e7e0d6;
+  border-radius: 12px;
+}
+
+.card-mock-wire {
+  position: relative;
+  width: 110px;
+  height: 68px;
+  border: 2px solid #d4af37;
+  border-radius: 8px;
+  background: #06243d;
+  overflow: hidden;
+}
+
+.scan-laser-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #d4af37;
+  box-shadow: 0 0 10px #d4af37;
+  animation: aadhaar-scan-line 1.8s ease-in-out infinite;
+}
+
+@keyframes aadhaar-scan-line {
+  0% {
+    top: 5px;
+  }
+  50% {
+    top: 60px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+
+/* Review form */
+.review-fields-form {
+  margin-top: 24px;
+}
+
+.form-row-dual {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-field-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.input-field-label {
+  color: #06243d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input-field-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d9dfe5;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #243447;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-field-control:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.input-field-control.disabled-input {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.masked-info-badge {
+  display: inline-block;
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.dpdp-consent-box {
+  padding: 18px;
+  background: #f8f5ef;
+  border: 1px solid #e7e0d6;
+  border-radius: 10px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  accent-color: #06243d;
+  flex-shrink: 0;
+}
+
+.checkbox-text {
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Success screen */
+.aadhaar-success-screen {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.aadhaar-success-screen h2 {
+  color: #06243d;
+  font-size: 26px;
+  margin: 20px 0 12px;
+}
+
+.aadhaar-success-screen p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.verified-summary-card {
+  max-width: 500px;
+  margin: 24px auto;
+  padding: 20px;
+  background: #f8f5ef;
+  border: 1px solid #e7e0d6;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e7e0d6;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-row span {
+  color: #64748b;
+}
+
+.summary-row strong {
+  color: #06243d;
+  text-align: right;
+}
+
+.text-success {
+  color: #16865c;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .aadhaar-workflow-card {
+    padding: 22px;
+  }
+
+  .workflow-options-dual,
+  .capture-methods-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-stepper-bar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .node-line {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .aadhaar-hero-section {
+    padding: 35px 16px 25px;
+  }
+
+  .aadhaar-workflow-section {
+    padding: 20px 12px 40px;
+  }
+
+  .aadhaar-workflow-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .privacy-guarantee-banner {
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .banner-text-col h3 {
+    font-size: 17px;
+  }
+
+  .banner-text-col p {
+    font-size: 13px;
+  }
+
+  .step-node {
+    gap: 6px;
+  }
+
+  .node-label {
+    font-size: 11px;
+    white-space: normal;
+  }
+
+  .node-num {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .form-row-dual {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .aadhaar-review-screen .flex.justify-between {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .aadhaar-review-screen .btn-primary-navy,
+  .aadhaar-review-screen .btn-modal-cancel {
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .summary-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .summary-row strong {
+    text-align: left;
+  }
+}
+
+/* ==========================================
+   ETHNIC COLLECTION HUB
+   AADHAAR SCANNER MODAL
+========================================== */
+
+/* Modal backdrop */
+.modal-backdrop:has(.modal-aadhaar-dialog) {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(6, 36, 61, 0.72);
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+}
+
+/* Main modal */
+.modal-aadhaar-dialog {
+  width: 100%;
+  max-width: 760px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e7e0d6;
+  border-radius: 18px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin: auto;
+  color: #243447;
+  box-sizing: border-box;
+}
+
+/* Modal header */
+.modal-aadhaar-dialog .modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 28px;
+  background: #ffffff;
+  border-bottom: 1px solid #e7e0d6;
+  flex-shrink: 0;
+}
+
+.modal-aadhaar-dialog .modal-title-with-icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+}
+
+.modal-aadhaar-dialog .modal-title-with-icon > svg {
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.modal-aadhaar-dialog .modal-title {
+  color: #06243d;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 6px;
+}
+
+.modal-aadhaar-dialog .modal-subtitle {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Close button */
+.modal-aadhaar-dialog .modal-close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-aadhaar-dialog .modal-close-button:hover {
+  background: #f8f5ef;
+  color: #06243d;
+  border-color: #d4af37;
+}
+
+/* Scrollable modal body */
+.modal-aadhaar-dialog .modal-body-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 26px 28px;
+  background: #ffffff;
+}
+
+/* Privacy notice */
+.modal-aadhaar-dialog .aadhaar-privacy-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px;
+  margin-bottom: 24px;
+  background: #f8f5ef;
+  border: 1px solid #e7e0d6;
+  border-left: 4px solid #d4af37;
+  border-radius: 10px;
+}
+
+.modal-aadhaar-dialog .aadhaar-privacy-disclaimer > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.modal-aadhaar-dialog .aadhaar-privacy-disclaimer strong {
+  display: block;
+  color: #06243d;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.modal-aadhaar-dialog .aadhaar-privacy-disclaimer p {
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.modal-aadhaar-dialog .aadhaar-privacy-disclaimer code {
+  background: #e9e2d6;
+  color: #06243d;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Camera and upload cards */
+.modal-aadhaar-dialog .capture-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.modal-aadhaar-dialog .capture-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e7e0d6;
+  border-radius: 12px;
+  min-width: 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-aadhaar-dialog .capture-card:hover {
+  border-color: #d4af37;
+  box-shadow: 0 6px 18px rgba(6, 36, 61, 0.06);
+}
+
+.modal-aadhaar-dialog .capture-icon-circle {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  background: #f8f5ef;
+  color: #06243d;
+  border-radius: 10px;
+}
+
+.modal-aadhaar-dialog .capture-card h4 {
+  color: #06243d;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.modal-aadhaar-dialog .capture-card p {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 18px;
+}
+
+/* Make card buttons align at bottom */
+.modal-aadhaar-dialog .capture-card .block-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
+  margin-top: auto;
+  padding: 12px 16px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Navy button */
+.modal-aadhaar-dialog .btn-primary-navy {
+  background: #06243d;
+  color: #ffffff;
+  border: 1px solid #06243d;
+}
+
+.modal-aadhaar-dialog .btn-primary-navy:hover {
+  background: #103a5c;
+}
+
+/* Gold button */
+.modal-aadhaar-dialog .btn-gold-action {
+  background: #d4af37;
+  color: #06243d;
+  border: 1px solid #d4af37;
+}
+
+.modal-aadhaar-dialog .btn-gold-action:hover {
+  background: #e2bd4d;
+}
+
+.modal-aadhaar-dialog button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Hide native file input */
+.modal-aadhaar-dialog .hidden-file-input {
+  display: none;
+}
+
+/* Error message */
+.modal-aadhaar-dialog .auth-alert-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  margin-top: 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.modal-aadhaar-dialog .alert-danger {
+  background: #fff1f2;
+  color: #b42318;
+  border: 1px solid #fecaca;
+}
+
+/* Processing screen */
+.modal-aadhaar-dialog .aadhaar-processing-screen {
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.modal-aadhaar-dialog .processing-spinner-box {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.modal-aadhaar-dialog .processing-spinner-box h4 {
+  color: #06243d;
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+
+.modal-aadhaar-dialog .processing-status-text {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.modal-aadhaar-dialog .privacy-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  margin-top: 14px;
+  background: #f8f5ef;
+  color: #06243d;
+  border: 1px solid #e7e0d6;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+/* Review form */
+.modal-aadhaar-dialog .review-fields-form {
+  margin-top: 20px;
+}
+
+.modal-aadhaar-dialog .form-row-dual {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.modal-aadhaar-dialog .form-field-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+  min-width: 0;
+}
+
+.modal-aadhaar-dialog .input-field-label {
+  color: #06243d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.modal-aadhaar-dialog .input-field-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d9dfe5;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #243447;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.modal-aadhaar-dialog .input-field-control:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.modal-aadhaar-dialog .disabled-input {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.modal-aadhaar-dialog textarea.input-field-control {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.modal-aadhaar-dialog .dpdp-consent-box {
+  padding: 16px;
+  margin-top: 8px;
+  background: #f8f5ef;
+  border: 1px solid #e7e0d6;
+  border-radius: 10px;
+}
+
+.modal-aadhaar-dialog .checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.modal-aadhaar-dialog .custom-checkbox {
+  width: 17px;
+  height: 17px;
+  margin-top: 3px;
+  flex-shrink: 0;
+  accent-color: #06243d;
+}
+
+.modal-aadhaar-dialog .checkbox-text {
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* Successful scan */
+.modal-aadhaar-dialog .extraction-success-badge {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px;
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  border-radius: 9px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.modal-aadhaar-dialog .extraction-success-badge svg {
+  flex-shrink: 0;
+}
+
+.modal-aadhaar-dialog .aadhaar-success-screen {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.modal-aadhaar-dialog .aadhaar-success-screen h3 {
+  color: #06243d;
+  font-size: 22px;
+  margin: 16px 0 10px;
+}
+
+.modal-aadhaar-dialog .aadhaar-success-screen p {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.modal-aadhaar-dialog .success-icon-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* Summary */
+.modal-aadhaar-dialog .verified-summary-card {
+  padding: 16px 20px;
+  margin-top: 20px;
+  background: #f8f5ef;
+  border: 1px solid #e7e0d6;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.modal-aadhaar-dialog .summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid #e7e0d6;
+  font-size: 13px;
+}
+
+.modal-aadhaar-dialog .summary-row:last-child {
+  border-bottom: none;
+}
+
+.modal-aadhaar-dialog .summary-row span {
+  color: #64748b;
+}
+
+.modal-aadhaar-dialog .summary-row strong {
+  color: #06243d;
+  text-align: right;
+}
+
+/* Modal footer */
+.modal-aadhaar-dialog .modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 18px 28px;
+  background: #ffffff;
+  border-top: 1px solid #e7e0d6;
+  flex-shrink: 0;
+}
+
+.modal-aadhaar-dialog .modal-footer button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-aadhaar-dialog .btn-modal-cancel {
+  background: #ffffff;
+  color: #475569;
+  border: 1px solid #d9dfe5;
+}
+
+.modal-aadhaar-dialog .btn-modal-cancel:hover {
+  background: #f8f5ef;
+  border-color: #cbd5e1;
+}
+
+/* Responsive modal */
+@media (max-width: 650px) {
+  .modal-backdrop:has(.modal-aadhaar-dialog) {
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .modal-aadhaar-dialog {
+    max-height: calc(100vh - 24px);
+    border-radius: 14px;
+  }
+
+  .modal-aadhaar-dialog .modal-header {
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .modal-aadhaar-dialog .modal-title {
+    font-size: 19px;
+  }
+
+  .modal-aadhaar-dialog .modal-subtitle {
+    font-size: 11px;
+  }
+
+  .modal-aadhaar-dialog .modal-body-scroll {
+    padding: 18px;
+  }
+
+  .modal-aadhaar-dialog .capture-methods-grid,
+  .modal-aadhaar-dialog .form-row-dual {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-aadhaar-dialog .capture-card {
+    padding: 20px;
+  }
+
+  .modal-aadhaar-dialog .modal-footer {
+    padding: 14px 18px;
+    flex-wrap: wrap;
+  }
+
+  .modal-aadhaar-dialog .modal-footer button {
+    flex: 1;
+  }
+}
+
+/* ==========================================
+   ETHNIC COLLECTION HUB
+   AADHAAR SCANNER MODAL
+========================================== */
+
+/* Modal backdrop */
+.modal-backdrop:has(.modal-aadhaar-dialog) {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(6, 36, 61, 0.72);
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+}
+
+/* Main modal */
+.modal-aadhaar-dialog {
+  width: 100%;
+  max-width: 760px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e7e0d6;
+  border-radius: 18px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin: auto;
+  color: #243447;
+  box-sizing: border-box;
+}
+
+/* Modal header */
+.modal-aadhaar-dialog .modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 28px;
+  background: #ffffff;
+  border-bottom: 1px solid #e7e0d6;
+  flex-shrink: 0;
+}
+
+.modal-aadhaar-dialog .modal-title-with-icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+}
+
+.modal-aadhaar-dialog .modal-title-with-icon > svg {
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.modal-aadhaar-dialog .modal-title {
+  color: #06243d;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 6px;
+}
+
+.modal-aadhaar-dialog .modal-subtitle {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Close button */
+.modal-aadhaar-dialog .modal-close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-aadhaar-dialog .modal-close-button:hover {
+  background: #f8f5ef;
+  color: #06243d;
+  border-color: #d4af37;
+}
+
+/* Scrollable modal body */
+.modal-aadhaar-dialog .modal-body-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 26px 28px;
+  background: #ffffff;
+}
+
+/* Privacy notice */
+.modal-aadhaar-dialog .aadhaar-privacy-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px;
+  margin-bottom: 24px;
+  background: #f8f5ef;
+  border: 1px solid #e7e0d6;
+  border-left: 4px solid #d4af37;
+  border-radius: 10px;
+}
+
+.modal-aadhaar-dialog .aadhaar-privacy-disclaimer > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.modal-aadhaar-dialog .aadhaar-privacy-disclaimer strong {
+  display: block;
+  color: #06243d;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.modal-aadhaar-dialog .aadhaar-privacy-disclaimer p {
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.modal-aadhaar-dialog .aadhaar-privacy-disclaimer code {
+  background: #e9e2d6;
+  color: #06243d;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Camera and upload cards */
+.modal-aadhaar-dialog .capture-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.modal-aadhaar-dialog .capture-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e7e0d6;
+  border-radius: 12px;
+  min-width: 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-aadhaar-dialog .capture-card:hover {
+  border-color: #d4af37;
+  box-shadow: 0 6px 18px rgba(6, 36, 61, 0.06);
+}
+
+.modal-aadhaar-dialog .capture-icon-circle {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  background: #f8f5ef;
+  color: #06243d;
+  border-radius: 10px;
+}
+
+.modal-aadhaar-dialog .capture-card h4 {
+  color: #06243d;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.modal-aadhaar-dialog .capture-card p {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 18px;
+}
+
+/* Make card buttons align at bottom */
+.modal-aadhaar-dialog .capture-card .block-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
+  margin-top: auto;
+  padding: 12px 16px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Navy button */
+.modal-aadhaar-dialog .btn-primary-navy {
+  background: #06243d;
+  color: #ffffff;
+  border: 1px solid #06243d;
+}
+
+.modal-aadhaar-dialog .btn-primary-navy:hover {
+  background: #103a5c;
+}
+
+/* Gold button */
+.modal-aadhaar-dialog .btn-gold-action {
+  background: #d4af37;
+  color: #06243d;
+  border: 1px solid #d4af37;
+}
+
+.modal-aadhaar-dialog .btn-gold-action:hover {
+  background: #e2bd4d;
+}
+
+.modal-aadhaar-dialog button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Hide native file input */
+.modal-aadhaar-dialog .hidden-file-input {
+  display: none;
+}
+
+/* Error message */
+.modal-aadhaar-dialog .auth-alert-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  margin-top: 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.modal-aadhaar-dialog .alert-danger {
+  background: #fff1f2;
+  color: #b42318;
+  border: 1px solid #fecaca;
+}
+
+/* Processing screen */
+.modal-aadhaar-dialog .aadhaar-processing-screen {
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.modal-aadhaar-dialog .processing-spinner-box {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.modal-aadhaar-dialog .processing-spinner-box h4 {
+  color: #06243d;
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+
+.modal-aadhaar-dialog .processing-status-text {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.modal-aadhaar-dialog .privacy-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  margin-top: 14px;
+  background: #f8f5ef;
+  color: #06243d;
+  border: 1px solid #e7e0d6;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+/* Review form */
+.modal-aadhaar-dialog .review-fields-form {
+  margin-top: 20px;
+}
+
+.modal-aadhaar-dialog .form-row-dual {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.modal-aadhaar-dialog .form-field-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+  min-width: 0;
+}
+
+.modal-aadhaar-dialog .input-field-label {
+  color: #06243d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.modal-aadhaar-dialog .input-field-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d9dfe5;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #243447;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.modal-aadhaar-dialog .input-field-control:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.modal-aadhaar-dialog .disabled-input {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.modal-aadhaar-dialog textarea.input-field-control {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.modal-aadhaar-dialog .dpdp-consent-box {
+  padding: 16px;
+  margin-top: 8px;
+  background: #f8f5ef;
+  border: 1px solid #e7e0d6;
+  border-radius: 10px;
+}
+
+.modal-aadhaar-dialog .checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.modal-aadhaar-dialog .custom-checkbox {
+  width: 17px;
+  height: 17px;
+  margin-top: 3px;
+  flex-shrink: 0;
+  accent-color: #06243d;
+}
+
+.modal-aadhaar-dialog .checkbox-text {
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* Successful scan */
+.modal-aadhaar-dialog .extraction-success-badge {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px;
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  border-radius: 9px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.modal-aadhaar-dialog .extraction-success-badge svg {
+  flex-shrink: 0;
+}
+
+.modal-aadhaar-dialog .aadhaar-success-screen {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.modal-aadhaar-dialog .aadhaar-success-screen h3 {
+  color: #06243d;
+  font-size: 22px;
+  margin: 16px 0 10px;
+}
+
+.modal-aadhaar-dialog .aadhaar-success-screen p {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.modal-aadhaar-dialog .success-icon-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* Summary */
+.modal-aadhaar-dialog .verified-summary-card {
+  padding: 16px 20px;
+  margin-top: 20px;
+  background: #f8f5ef;
+  border: 1px solid #e7e0d6;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.modal-aadhaar-dialog .summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid #e7e0d6;
+  font-size: 13px;
+}
+
+.modal-aadhaar-dialog .summary-row:last-child {
+  border-bottom: none;
+}
+
+.modal-aadhaar-dialog .summary-row span {
+  color: #64748b;
+}
+
+.modal-aadhaar-dialog .summary-row strong {
+  color: #06243d;
+  text-align: right;
+}
+
+/* Modal footer */
+.modal-aadhaar-dialog .modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 18px 28px;
+  background: #ffffff;
+  border-top: 1px solid #e7e0d6;
+  flex-shrink: 0;
+}
+
+.modal-aadhaar-dialog .modal-footer button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-aadhaar-dialog .btn-modal-cancel {
+  background: #ffffff;
+  color: #475569;
+  border: 1px solid #d9dfe5;
+}
+
+.modal-aadhaar-dialog .btn-modal-cancel:hover {
+  background: #f8f5ef;
+  border-color: #cbd5e1;
+}
+
+/* Responsive modal */
+@media (max-width: 650px) {
+  .modal-backdrop:has(.modal-aadhaar-dialog) {
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .modal-aadhaar-dialog {
+    max-height: calc(100vh - 24px);
+    border-radius: 14px;
+  }
+
+  .modal-aadhaar-dialog .modal-header {
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .modal-aadhaar-dialog .modal-title {
+    font-size: 19px;
+  }
+
+  .modal-aadhaar-dialog .modal-subtitle {
+    font-size: 11px;
+  }
+
+  .modal-aadhaar-dialog .modal-body-scroll {
+    padding: 18px;
+  }
+
+  .modal-aadhaar-dialog .capture-methods-grid,
+  .modal-aadhaar-dialog .form-row-dual {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-aadhaar-dialog .capture-card {
+    padding: 20px;
+  }
+
+  .modal-aadhaar-dialog .modal-footer {
+    padding: 14px 18px;
+    flex-wrap: wrap;
+  }
+
+  .modal-aadhaar-dialog .modal-footer button {
+    flex: 1;
+  }
+}
+
+/* ==========================================
+   ETHNIC COLLECTION HUB
+   RETAILER TRADE CATALOGUE
+========================================== */
+
+/* Category filter row */
+.catalogue-category-chips-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.catalogue-category-chips-row .chip-filter-btn {
+  padding: 10px 18px;
+  background: #ffffff;
+  color: #06243d;
+  border: 1px solid #e2d8c9;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.catalogue-category-chips-row .chip-filter-btn:hover {
+  background: #f8f5ef;
+  border-color: #d4af37;
+}
+
+.catalogue-category-chips-row .chip-filter-btn.active {
+  background: #06243d;
+  color: #ffffff;
+  border-color: #06243d;
+}
+
+/* Product grid */
+.retailer-trade-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* Product card */
+.retailer-product-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #e7e0d6;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(6, 36, 61, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.retailer-product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(6, 36, 61, 0.09);
+}
+
+/* Product image */
+.r-card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background: #f8f5ef;
+  overflow: hidden;
+}
+
+.r-card-thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.retailer-product-card:hover .r-card-thumb {
+  transform: scale(1.04);
+}
+
+/* MOQ badge */
+.r-moq-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 7px 12px;
+  background: #06243d;
+  color: #ffffff;
+  border: 1px solid #d4af37;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 700;
+  box-shadow: 0 3px 10px rgba(6, 36, 61, 0.15);
+}
+
+/* Product information */
+.r-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.cat-accent-pill {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background: #f8f5ef;
+  color: #9b7618;
+  border: 1px solid #eee2c3;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.r-card-title {
+  margin: 0 0 8px;
+  color: #06243d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.r-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.r-card-title a:hover {
+  color: #b28a20;
+}
+
+.r-card-fabric {
+  margin: 0 0 18px;
+  color: #718096;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Price comparison */
+.r-margin-box {
+  padding: 16px;
+  background: #f8f5ef;
+  border: 1px solid #e7e0d6;
+  border-radius: 10px;
+  margin-top: auto;
+}
+
+.r-trade-price-row,
+.r-mrp-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.r-margin-box .label {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.r-trade-price-row .trade-price {
+  color: #06243d;
+  font-size: 18px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.r-mrp-row .mrp-strike {
+  color: #94a3b8;
+  font-size: 13px;
+  text-decoration: line-through;
+  white-space: nowrap;
+}
+
+/* Gross profit */
+.r-profit-pill {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #eaf7ef;
+  border: 1px solid #ccebd8;
+  border-radius: 8px;
+  color: #166534;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.r-profit-pill .text-green {
+  color: #16865c;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.r-profit-pill strong {
+  color: #166534;
+  font-weight: 800;
+}
+
+/* Product actions */
+.r-card-actions {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.r-card-actions .add-cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.r-card-actions .btn-primary-navy {
+  background: #06243d;
+  color: #ffffff;
+  border: 1px solid #06243d;
+}
+
+.r-card-actions .btn-primary-navy:hover {
+  background: #103a5c;
+}
+
+.r-card-actions .btn-modal-cancel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  min-width: 46px;
+  height: 46px;
+  padding: 0;
+  background: #ffffff;
+  color: #06243d;
+  border: 1px solid #d9dfe5;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.r-card-actions .btn-modal-cancel:hover {
+  background: #f8f5ef;
+  border-color: #d4af37;
+}
+
+/* Cart notification */
+.auth-alert-box.alert-success {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  background: #eaf7ef;
+  color: #166534;
+  border: 1px solid #ccebd8;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Utility classes */
+.flex-1 {
+  flex: 1;
+  min-width: 0;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+/* Responsive tablet */
+@media (max-width: 1100px) {
+  .retailer-trade-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .r-card-img-wrap {
+    height: 250px;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 650px) {
+  .retailer-trade-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .catalogue-category-chips-row {
+    gap: 8px;
+  }
+
+  .catalogue-category-chips-row .chip-filter-btn {
+    padding: 8px 13px;
+    font-size: 12px;
+  }
+
+  .r-card-img-wrap {
+    height: 300px;
+  }
+
+  .r-card-body {
+    padding: 16px;
+  }
+
+  .r-card-title {
+    font-size: 17px;
+  }
+
+  .r-margin-box {
+    padding: 14px;
+  }
+
+  .r-card-actions .add-cart-btn {
+    font-size: 11px;
+    padding: 10px;
+  }
+}
+
+/* ==========================================
+   ETHNIC COLLECTION HUB
+   RETAILER RETURNS & DAMAGE CLAIMS
+========================================== */
+
+/* Transit damage policy notice */
+.return-policy-notice-box {
+  padding: 22px 26px;
+  background: #06243d;
+  color: #ffffff;
+  border: 1px solid #d4af37;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(6, 36, 61, 0.08);
+}
+
+.return-policy-notice-box .policy-notice-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #d4af37;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.return-policy-notice-box .policy-notice-header svg {
+  flex-shrink: 0;
+}
+
+.return-policy-notice-box p {
+  margin: 10px 0 0;
+  color: #e2e8f0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.return-policy-notice-box p strong {
+  color: #ffffff;
+}
+
+/* Page heading and new claim button */
+.returns-list-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.btn-primary-navy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 18px;
+  background: #06243d;
+  color: #ffffff;
+  border: 1px solid #06243d;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary-navy:hover {
+  background: #103a5c;
+  border-color: #103a5c;
+}
+
+.btn-primary-navy svg {
+  flex-shrink: 0;
+}
+
+/* Individual claim card */
+.return-claim-card {
+  background: #ffffff;
+  border: 1px solid #e7e0d6;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(6, 36, 61, 0.04);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.return-claim-card:hover {
+  border-color: #d4af37;
+  box-shadow: 0 8px 24px rgba(6, 36, 61, 0.08);
+}
+
+/* Claim header */
+.return-claim-card .claim-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 22px;
+  background: #f8f5ef;
+  border-bottom: 1px solid #e7e0d6;
+}
+
+.return-claim-card .claim-meta-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-width: 0;
+}
+
+.return-claim-card .claim-id-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 11px;
+  background: #06243d;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.return-claim-card .claim-order-ref {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.return-claim-card .claim-order-ref strong {
+  color: #06243d;
+}
+
+.return-claim-card .claim-date {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* Claim status badges */
+.return-claim-card .claim-status-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.return-claim-card .status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+/* Pending */
+.return-claim-card .status-pending {
+  background: #fff7e6;
+  color: #9a6700;
+  border: 1px solid #f3d28a;
+}
+
+/* Approved */
+.return-claim-card .status-approved {
+  background: #eaf7ef;
+  color: #166534;
+  border: 1px solid #ccebd8;
+}
+
+/* Rejected */
+.return-claim-card .status-rejected {
+  background: #fff1f2;
+  color: #b42318;
+  border: 1px solid #fecaca;
+}
+
+/* In review */
+.return-claim-card .status-under-review,
+.return-claim-card .status-in-review {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+/* Claim body */
+.return-claim-card .claim-card-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+}
+
+.return-claim-card .claim-info-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.return-claim-card .claim-item-name {
+  margin: 0 0 12px;
+  color: #06243d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.return-claim-card .claim-defect-type {
+  margin: 0 0 12px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.return-claim-card .claim-defect-type strong {
+  color: #b28a20;
+  font-weight: 700;
+}
+
+/* Damage description */
+.return-claim-card .claim-desc-text {
+  margin: 0;
+  padding: 14px 16px;
+  background: #f8f5ef;
+  border-left: 3px solid #d4af37;
+  border-radius: 0 8px 8px 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+/* Empty state */
+.shop-empty-state-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  background: #ffffff;
+  border: 1px dashed #d9dfe5;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.shop-empty-state-box .text-success {
+  color: #16865c;
+  margin-bottom: 16px;
+}
+
+.shop-empty-state-box h3 {
+  margin: 0 0 10px;
+  color: #06243d;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.shop-empty-state-box p {
+  max-width: 420px;
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Responsive tablet */
+@media (max-width: 900px) {
+  .return-claim-card .claim-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .return-claim-card .claim-status-group {
+    align-self: flex-start;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+  .return-policy-notice-box {
+    padding: 18px;
+  }
+
+  .return-policy-notice-box .policy-notice-header {
+    align-items: flex-start;
+    font-size: 13px;
+  }
+
+  .return-policy-notice-box p {
+    font-size: 12px;
+  }
+
+  .return-claim-card .claim-card-header {
+    padding: 16px;
+  }
+
+  .return-claim-card .claim-meta-group {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .return-claim-card .claim-card-body {
+    padding: 18px;
+  }
+
+  .return-claim-card .claim-item-name {
+    font-size: 16px;
+  }
+
+  .shop-empty-state-box {
+    padding: 40px 18px;
+  }
+}
+
+/* ========================================
+   WHOLESALER LANDING PAGE
+======================================== */
+
+.wholesale-landing {
+  min-height: 100vh;
+  background: #f8f5ef;
+  color: #17233f;
+  font-family: inherit;
+}
+
+/* Header */
+
+.wholesale-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  background: #fff;
+  border-bottom: 1px solid #e8e0d3;
+}
+
+.wholesale-logo {
+  color: #17233f;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+
+.wholesale-header-login {
+  color: #17233f;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #c9a45c;
+  padding-bottom: 5px;
+}
+
+/* Hero */
+
+.wholesale-hero {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(201, 164, 92, 0.18),
+      transparent 30%
+    ),
+    linear-gradient(120deg, #17233f, #263957);
+  color: #fff;
+}
+
+.wholesale-hero-content {
+  max-width: 720px;
+}
+
+.wholesale-tag {
+  display: inline-block;
+  color: #d6b875;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.wholesale-hero h1 {
+  font-size: clamp(38px, 5vw, 68px);
+  line-height: 1.12;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.wholesale-hero p {
+  max-width: 560px;
+  color: #dce2ec;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* Hero Buttons */
+
+.wholesale-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 35px;
+}
+
+.wholesale-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 28px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.wholesale-btn-primary {
+  background: #c9a45c;
+  color: #17233f;
+  border: 1px solid #c9a45c;
+}
+
+.wholesale-btn-primary:hover {
+  background: #dfc17e;
+  border-color: #dfc17e;
+  transform: translateY(-3px);
+}
+
+.wholesale-btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #d6b875;
+}
+
+.wholesale-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-3px);
+}
+
+/* Benefits */
+
+.wholesale-benefits {
+  padding: 85px 8%;
+  text-align: center;
+}
+
+.wholesale-benefits h2 {
+  font-size: 36px;
+  margin: 0 0 45px;
+  color: #17233f;
+}
+
+.wholesale-benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.wholesale-benefit-card {
+  background: #fff;
+  border: 1px solid #e8e0d3;
+  border-radius: 8px;
+  padding: 38px 28px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.wholesale-benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(23, 35, 63, 0.08);
+}
+
+.wholesale-benefit-number {
+  display: block;
+  color: #c9a45c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.wholesale-benefit-card h3 {
+  font-size: 20px;
+  color: #17233f;
+  margin: 0 0 15px;
+}
+
+.wholesale-benefit-card p {
+  color: #727784;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Bottom CTA */
+
+.wholesale-bottom-cta {
+  padding: 85px 20px;
+  text-align: center;
+  background: #eee6d8;
+}
+
+.wholesale-bottom-cta > span {
+  color: #a17c36;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.wholesale-bottom-cta h2 {
+  color: #17233f;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.wholesale-bottom-cta p {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+/* Footer */
+
+.wholesale-footer {
+  background: #17233f;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.wholesale-footer span {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.wholesale-footer p {
+  color: #cbd2df;
+  font-size: 12px;
+  margin: 12px 0 0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .wholesale-header {
+    padding: 20px 5%;
+  }
+
+  .wholesale-logo {
+    font-size: 15px;
+  }
+
+  .wholesale-hero {
+    min-height: auto;
+    padding: 65px 6%;
+  }
+
+  .wholesale-hero h1 {
+    font-size: 40px;
+  }
+
+  .wholesale-hero p {
+    font-size: 15px;
+  }
+
+  .wholesale-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .wholesale-benefits {
+    padding: 60px 6%;
+  }
+
+  .wholesale-benefits h2 {
+    font-size: 29px;
+  }
+
+  .wholesale-benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wholesale-bottom-cta {
+    padding: 60px 6%;
+  }
+}
+
+
 
 
 

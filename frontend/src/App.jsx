@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 
@@ -45,6 +46,9 @@ import RetailerOrderTrackingPage from './pages/retailer/RetailerOrderTrackingPag
 import RetailerInvoicesPage from './pages/retailer/RetailerInvoicesPage';
 import RetailerReturnsPage from './pages/retailer/RetailerReturnsPage';
 
+// Wholesaler Landing Page
+import WholesaleLandingPage from './pages/wholesaler/WholesaleLandingPage';
+
 // Wholesaler Pages (39 - 50)
 import WholesalerDashboardPage from './pages/wholesaler/WholesalerDashboardPage';
 import WholesalerProfilePage from './pages/wholesaler/WholesalerProfilePage';
@@ -62,6 +66,13 @@ import WholesaleReturnsPage from './pages/wholesaler/WholesaleReturnsPage';
 // Admin Page
 import AdminDashboardPage from './pages/admin/AdminDashboardPage';
 
+// BLUECORE — Employer & Staff Management
+import BluecoreLoginPage from './pages/bluecore/BluecoreLoginPage';
+import BluecoreAdminDashboard from './pages/bluecore/BluecoreAdminDashboard';
+import BluecoreStaffDashboard from './pages/bluecore/BluecoreStaffDashboard';
+import BluecoreProtectedRoute from './pages/bluecore/BluecoreProtectedRoute';
+import { BC_ROLES } from './services/bluecoreAuthService';
+
 // Styles
 import './LoginPage.css';
 import './index.css';
@@ -70,9 +81,11 @@ import './styles/ecommerce.css';
 // Scroll to top helper on navigation
 function ScrollToTop() {
   const { pathname } = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
   return null;
 }
 
@@ -80,9 +93,11 @@ export default function App() {
   return (
     <HashRouter>
       <ScrollToTop />
+
       <Routes>
         {/* SECTION A: PUBLIC WEBSITE AND AUTHENTICATION (1 - 15) */}
         <Route path="/" element={<HomePage />} />
+        <Route path="/wholesale" element={<WholesaleLandingPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/shop" element={<ShopPage />} />
@@ -142,6 +157,31 @@ export default function App() {
         {/* SUPPLEMENTARY PROTECTED ADMIN PANEL */}
         <Route path="/admin" element={<AdminDashboardPage />} />
         <Route path="/admin/*" element={<AdminDashboardPage />} />
+
+        {/* ══════════════════════════════════════════════════════════
+            BLUECORE — EMPLOYER & STAFF MANAGEMENT SYSTEM
+            Routes: /bluecore/login · /bluecore/admin · /bluecore/staff
+            ══════════════════════════════════════════════════════════ */}
+        <Route path="/bluecore/login" element={<BluecoreLoginPage />} />
+        <Route
+          path="/bluecore/admin"
+          element={
+            <BluecoreProtectedRoute allowedRoles={[BC_ROLES.ADMIN]}>
+              <BluecoreAdminDashboard />
+            </BluecoreProtectedRoute>
+          }
+        />
+        <Route
+          path="/bluecore/staff"
+          element={
+            <BluecoreProtectedRoute allowedRoles={[BC_ROLES.STAFF]}>
+              <BluecoreStaffDashboard />
+            </BluecoreProtectedRoute>
+          }
+        />
+        {/* Any /bluecore/* without a specific match → login */}
+        <Route path="/bluecore" element={<Navigate to="/bluecore/login" replace />} />
+        <Route path="/bluecore/*" element={<Navigate to="/bluecore/login" replace />} />
 
         {/* Fallback */}
         <Route path="*" element={<Navigate to="/" replace />} />

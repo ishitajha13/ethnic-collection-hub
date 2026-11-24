@@ -1,0 +1,9 @@
+# Query: <HashRouter
+# ContextLines: 1
+
+
+
+frontend\src\App.jsx:
+  80    return (
+  81:     <HashRouter>
+  82        <ScrollToTop />
